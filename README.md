@@ -12,18 +12,21 @@
 
 ## Create a custom docker image  
 1. Create a directory and move into it.  
-``mkdir ~/mynginx && cd ~/mynginx```
+```mkdir ~/mynginx && cd ~/mynginx```  
 2. Create a Dockerfile in the newly created directory with the following  
 content.
 ```
 FROM nginx
 COPY index.html /usr/share/nginx/html
 ```  
-
 3.  Create index.html in the same directory with your favorite content  
 ```html
 <h1>Hello, world</h1>
 ```  
-
-
+4. Build the Docker image.  
+```docker build -t citrus1998/mynginx .```
+5. Check if your image has been created successfully.  
+``` docker images ```  
+6. Run your custom docker image.  
+``` docker run -p 8000:80 citrus1998/mynginx ```  
 
