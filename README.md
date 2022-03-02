@@ -38,6 +38,7 @@ COPY index.html /usr/share/nginx/html
 
 ## Run a multi-container application  
 1. Create a directory and move into it.  
+``` mkdir ~/wordpress && cd ~/wordpress ```
 2. Create docker-compose.yml (config file for Docker Compose).  
 ```yaml
 version: '3.3'
