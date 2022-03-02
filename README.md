@@ -30,3 +30,8 @@ COPY index.html /usr/share/nginx/html
 6. Run your custom docker image.  
 ``` docker run -p 8000:80 citrus1998/mynginx ```  
 
+## Published docker image on Docker Hub  
+1. Login to Docker Hub.  
+```docker login ```
+2. Push your image to Docker Hub.  
+``` docker push citrus1998/mynginx ```  
