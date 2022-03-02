@@ -11,4 +11,5 @@
 2. ```docker run -it -p 8000:80 nginx```  
 
 ## Wordpress on Docker  
-
+1. ```docker run --name my_mysql -e MYSQL_ROOT_PASSWORD=pass -d mysql:5.7```
+2. ```docker run -e WORDPRESS_DB_PASSWORD=pass --link my_mysql:mysql -d -p 8080:80 wordpress```  
