@@ -35,3 +35,10 @@ COPY index.html /usr/share/nginx/html
 ```docker login ```
 2. Push your image to Docker Hub.  
 ``` docker push citrus1998/mynginx ```  
+
+## Run a multi-container application  
+1. Create a directory and move into it.  
+2. Create docker-compose.yml (config file for Docker Compose).  
+3. Run Docker Compose and launch the containers.  
+```  docker-compose up ```  
+
